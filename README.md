@@ -2,22 +2,30 @@
 
 ## Introduction
 
-Gradient Remedy is a novel method to solve the gradient interference problem in multi-task learning for noise-robust ASR, i.e., conflicting gradients and wrongly dominant gradients.
-It has improved the ASR performance on [Robust Automatic Transcription of Speech (RATS)](https://github.com/YUCHEN005/RATS-Channel-A-Speech-Data) and [CHiME-4](https://spandh.dcs.shef.ac.uk/chime_challenge/CHiME4/data.html) datasets.
+
+
+<img width="900" alt="1" src="https://user-images.githubusercontent.com/90536618/196723450-e190b120-101b-4107-afe3-e6a246dae9af.png">
+
+The figure above illustrates the overall architecture of our proposed unified network, which consists of an encoder, a SE network, a SS network and a decoder. The $x_n$ denotes noisy mixture, $x_c$ denotes parallel clean mixture, $s_1$ and $s_2$ denote the target sources. The $G$ denotes gradient.
 
 <div align=center>
-<img width=470 src="https://user-images.githubusercontent.com/90536618/196681399-f093065a-3451-4d9d-b950-394c96625f20.png">
+<img width="320" alt="2" src="https://user-images.githubusercontent.com/90536618/196723812-da843f8e-faa5-4418-a313-d7f3887f5d34.png">
 </div>
 
-Figure (a): Multi-task learning of speech enhancement (SE) and automatic speech recognition (ASR);
+Figure (a): If $G_\text{SE}$ conflicts with $G_\text{SS}$ (i.e., the angle between them is larger than $90^\circ$), we set the updated $G_\text{SE}^{gm}$ as the projection of $G_\text{SE}$ on the normal plane of $G_\text{SS}$;
 
-Figure (b): In case the SE and ASR gradients are conflicting (i.e., the angle between them is larger than $90^\circ$), we project the SE gradient onto a dynamic surface at acute angle $\theta$ to ASR gradient, in order to 1) remove conflict and 2) push SE gradient to assist in ASR optimization;
+Figure (b): If $G_\text{SE}$ is aligned with $G_\text{SS}$, which means no conlfict, we safely set $G_\text{SE}^{gm}$ equals to $G_\text{SE}$.
 
-Figure (c): In case of wrongly dominant SE gradient (i.e., $\Vert G_\text{SE} \Vert_2 > K \cdot \Vert G_\text{ASR} \Vert_2$ , where $K>1$ is a threshold), we adaptively rescale the magnitude of two gradients to prevent dominant ASR task being misled by SE gradient.
 
 ## Usage
 
-Our code implementation is based on [ESPnet](https://github.com/espnet/espnet). You may intall it directly using our provided ESPnet(v.0.9.6) folder, or install from official website and then add files from our repo. Kindly use the command `pip install -e .` to install ESPnet.
+Our code implementation is based on [SpeechBrain](https://github.com/speechbrain/speechbrain). Kindly use the following commands for installation:
+ ```bash
+git clone https://github.com/YUCHEN005/Unified-Enhance-Separation.git
+cd speechbrain
+pip install -r requirements.txt
+pip install -e .
+ ```
 
 In our folder, the running scripts are at `egs2/rats_chA/asr_with_enhancement/{run_rats_chA_gradient_remedy, rats_chA_gradient_remedy}.sh`, the network code are at `espnet2/{asr/, enh/, layers/}`, and the optimization code are at `espnet2/train/`.
 
