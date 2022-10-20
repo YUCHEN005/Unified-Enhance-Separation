@@ -18,7 +18,7 @@ Furthermore, in order to prevent SE from suppressing valid speaker information w
 
 Figure (a): If $G_\text{SE}$ conflicts with $G_\text{SS}$ (i.e., the angle between them is larger than $90^\circ$), we set the updated $G_\text{SE}^{gm}$ as the projection of $G_\text{SE}$ on the normal plane of $G_\text{SS}$;
 
-Figure (b): If $G_\text{SE}$ is aligned with $G_\text{SS}$, which means no conlfict, we safely set $G_\text{SE}^{gm}$ equals to $G_\text{SE}$.
+Figure (b): If $G_\text{SE}$ is aligned with $G_\text{SS}$, which means no confict, we safely set $G_\text{SE}^{gm}$ equals to $G_\text{SE}$.
 
 ## Performance
 
