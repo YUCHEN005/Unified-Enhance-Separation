@@ -9,7 +9,7 @@
 The figure above illustrates the overall architecture of our proposed unified network, which consists of an encoder, a SE network, a SS network and a decoder. The $x_n$ denotes noisy mixture, $x_c$ denotes parallel clean mixture, $s_1$ and $s_2$ denote the target sources. The $G$ denotes gradient.
 
 <div align=center>
-<img width="320" alt="2" src="https://user-images.githubusercontent.com/90536618/196723812-da843f8e-faa5-4418-a313-d7f3887f5d34.png">
+<img width="300" alt="2" src="https://user-images.githubusercontent.com/90536618/196723812-da843f8e-faa5-4418-a313-d7f3887f5d34.png">
 </div>
 
 Figure (a): If $G_\text{SE}$ conflicts with $G_\text{SS}$ (i.e., the angle between them is larger than $90^\circ$), we set the updated $G_\text{SE}^{gm}$ as the projection of $G_\text{SE}$ on the normal plane of $G_\text{SS}$;
@@ -22,7 +22,7 @@ Figure (b): If $G_\text{SE}$ is aligned with $G_\text{SS}$, which means no conlf
 Our code implementation is based on [SpeechBrain](https://github.com/speechbrain/speechbrain). Kindly use the following commands for installation:
  ```bash
 git clone https://github.com/YUCHEN005/Unified-Enhance-Separation.git
-cd speechbrain
+cd Unified-Enhance-Separation
 pip install -r requirements.txt
 pip install -e .
  ```
