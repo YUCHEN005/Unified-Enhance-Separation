@@ -23,9 +23,9 @@ Corresponding configuration files are provided in `hparams/` with similar names.
 
 The core code of our approach can be found in `train_unified_gm.py`:
 
-- Unified network: line 87-118 [[link]](https://github.com/YUCHEN005/Unified-Enhance-Separation/blob/master/recipes/LibriMix/separation/train_unified_gm.py#L87)
+- Unified network: [line 87-118](https://github.com/YUCHEN005/Unified-Enhance-Separation/blob/master/recipes/LibriMix/separation/train_unified_gm.py#L87)
 
-- Gradient modulation: line 257-294 [[link]](https://github.com/YUCHEN005/Unified-Enhance-Separation/blob/master/recipes/LibriMix/separation/train_unified_gm.py#L257)
+- Gradient modulation: [line 257-294](https://github.com/YUCHEN005/Unified-Enhance-Separation/blob/master/recipes/LibriMix/separation/train_unified_gm.py#L257)
 
 
 ## Libri-2/3Mix
