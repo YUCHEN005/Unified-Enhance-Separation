@@ -10,7 +10,7 @@ Firstly, we build a unified network with multi-task learning for optimization, w
 
 Figure: The overall architecture of our proposed unified network, which consists of an encoder, a SE network, a SS network and a decoder. The $x_n$ denotes noisy mixture, $x_c$ denotes parallel clean mixture, $s_1$ and $s_2$ denote the target sources. The $G$ denotes gradient.
 
-Furthermore, in order to prevent SE from suppressing valid speaker information while reducing noise, we propose a gradient modulation strategy to harmonize SE and SS tasks from the optimization view:
+Furthermore, in order to prevent SE from suppressing valid speaker information while reducing noise (i.e., over-suppression problem, as analyzed in [prior work](https://arxiv.org/abs/2110.05267)), we propose a gradient modulation strategy to harmonize SE and SS tasks from the optimization view:
 
 <div align=center>
 <img width="290" alt="2" src="https://user-images.githubusercontent.com/90536618/196723812-da843f8e-faa5-4418-a313-d7f3887f5d34.png">
