@@ -29,8 +29,10 @@ The core code of our approach can be found in `train_unified_gm.py`:
 
 
 ## Libri-2/3Mix
+
 The Libri2Mix and Libri3Mix datasets can be created using the scripts at [https://github.com/JorisCos/LibriMix](https://github.com/JorisCos/LibriMix).
 
+We also provide the .csv files in `csv_wham/`.
 
 ## Perfomance
 
