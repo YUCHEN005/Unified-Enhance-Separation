@@ -70,7 +70,7 @@ The corresponding configuration files are provided in `recipes/LibriMix/separati
 
 The core code of our approach can be found in `recipes/LibriMix/separation/train_unified_gm.py`:
 
-- Unified network: line 87-108 [[link]](https://github.com/YUCHEN005/Unified-Enhance-Separation/blob/master/recipes/LibriMix/separation/train_unified_gm.py#L87)
+- Unified network: line 87-118 [[link]](https://github.com/YUCHEN005/Unified-Enhance-Separation/blob/master/recipes/LibriMix/separation/train_unified_gm.py#L87)
 
 - Gradient modulation: line 257-294 [[link]](https://github.com/YUCHEN005/Unified-Enhance-Separation/blob/master/recipes/LibriMix/separation/train_unified_gm.py#L257)
 
