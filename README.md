@@ -58,7 +58,7 @@ pip install -e .
 
 In our folder, the running scripts are at `recipes/LibriMix/separation/`, and the network code are at `speechbrain/lobes/models/`.
 
-To start training or inference, please run following command to enter the experiment folder:
+To start training or inference, please run following command to enter the experiment folder [[link]](https://github.com/YUCHEN005/Unified-Enhance-Separation/tree/master/recipes/LibriMix/separation):
 
 ```bash
 cd recipes/LibriMix/separation/
