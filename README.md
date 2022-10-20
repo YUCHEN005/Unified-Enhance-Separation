@@ -58,7 +58,7 @@ pip install -e .
 
 In our folder, the running scripts are at `recipes/LibriMix/separation/`, and the network code are at `speechbrain/lobes/models/`.
 
-To start training or inference, please run following command to enter the experiment folder [[link]](https://github.com/YUCHEN005/Unified-Enhance-Separation/tree/master/recipes/LibriMix/separation):
+To start training or inference, please run following command to enter the [experiment folder](https://github.com/YUCHEN005/Unified-Enhance-Separation/tree/master/recipes/LibriMix/separation):
 
 ```bash
 cd recipes/LibriMix/separation/
@@ -70,8 +70,8 @@ The corresponding configuration files are provided in `recipes/LibriMix/separati
 
 The core code of our approach can be found in `recipes/LibriMix/separation/train_unified_gm.py`:
 
-- Unified network: line 87-118 [[link]](https://github.com/YUCHEN005/Unified-Enhance-Separation/blob/master/recipes/LibriMix/separation/train_unified_gm.py#L87)
+- Unified network: [line 87-118](https://github.com/YUCHEN005/Unified-Enhance-Separation/blob/master/recipes/LibriMix/separation/train_unified_gm.py#L87)
 
-- Gradient modulation: line 257-294 [[link]](https://github.com/YUCHEN005/Unified-Enhance-Separation/blob/master/recipes/LibriMix/separation/train_unified_gm.py#L257)
+- Gradient modulation: [line 257-294](https://github.com/YUCHEN005/Unified-Enhance-Separation/blob/master/recipes/LibriMix/separation/train_unified_gm.py#L257)
 
 
