@@ -1,4 +1,4 @@
-# Noisy speech separation with LibriMix
+# Noisy Speech Separation with LibriMix
 
 
 ## Usage
