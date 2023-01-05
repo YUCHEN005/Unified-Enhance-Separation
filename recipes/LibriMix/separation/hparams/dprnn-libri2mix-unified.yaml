@@ -36,7 +36,7 @@ progressbar: True
 save_audio: False # Save estimated sources on disk
 sample_rate: 8000
 use_wham_noise: True
-use_joint: True
+use_joint: False
 
 # weight
 weight_se: 0.1
