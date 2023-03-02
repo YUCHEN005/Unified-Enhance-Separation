@@ -20,6 +20,17 @@ Figure (a): If $G_\text{SE}$ conflicts with $G_\text{SS}$ (i.e., the angle betwe
 
 Figure (b): If $G_\text{SE}$ is aligned with $G_\text{SS}$, which means no confict, we safely set $G_\text{SE}^{gm}$ equals to $G_\text{SE}$.
 
+If you find this work useful in your research, please kindly use the following BibTeX entry for citation:
+
+```bash
+@article{hu2023unifying,
+  title={Unifying Speech Enhancement and Separation with Gradient Modulation for End-to-End Noise-Robust Speech Separation},
+  author={Hu, Yuchen and Chen, Chen and Zou, Heqing and Zhong, Xionghu and Chng, Eng Siong},
+  journal={arXiv preprint arXiv:2302.11131},
+  year={2023}
+}
+```
+
 ## Performance
 
 Our proposed approach has achieved the state-of-the-art on [LibriMix](https://github.com/JorisCos/LibriMix) dataset.
