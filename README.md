@@ -2,7 +2,7 @@
 
 [Unifying Speech Enhancement and Separation with Gradient Modulation for End-to-End Noise-Robust Speech Separation](https://arxiv.org/abs/2302.11131)
 
-[News]: The code is currently under maintenance, we will make it available asap. We apologize for inconvenience it may cause.
+Note: The code is currently under maintenance, we will make it available asap. We apologize for inconvenience it may cause.
 
 ## Introduction
 
