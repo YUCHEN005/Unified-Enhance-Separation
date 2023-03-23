@@ -23,14 +23,3 @@ Furthermore, in order to prevent SE from suppressing valid speaker information w
 Figure (a): If $G_\text{SE}$ conflicts with $G_\text{SS}$ (i.e., the angle between them is larger than $90^\circ$), we set the updated $G_\text{SE}^{gm}$ as the projection of $G_\text{SE}$ on the normal plane of $G_\text{SS}$;
 
 Figure (b): If $G_\text{SE}$ is aligned with $G_\text{SS}$, which means no confict, we safely set $G_\text{SE}^{gm}$ equals to $G_\text{SE}$.
-
-If you find this work useful in your research, please kindly use the following BibTeX entry for citation:
-
-```bash
-@article{hu2023unifying,
-  title={Unifying Speech Enhancement and Separation with Gradient Modulation for End-to-End Noise-Robust Speech Separation},
-  author={Hu, Yuchen and Chen, Chen and Zou, Heqing and Zhong, Xionghu and Chng, Eng Siong},
-  journal={arXiv preprint arXiv:2302.11131},
-  year={2023}
-}
-```
